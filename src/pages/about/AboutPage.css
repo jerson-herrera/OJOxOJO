@@ -8,91 +8,102 @@
   padding: 10px; /* Espaciado alrededor del contenido */
   box-sizing: border-box;
   padding-top: 75px; /*Baja el contenido para que no quede por debajo de la navbar*/
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .about-tittle {
   font-size: 2.5rem;
   color: #000000;
   margin-bottom: 0rem;
-  align-items:start;
+  align-items: start;
   justify-content: start;
+  margin-top: 0; /* Elimina cualquier margen superior */
+  margin-bottom: 0; /* Elimina el margen inferior */
 }
 
 .about-text {
   font-size: 1.2rem;
   color: #000000;
-  margin-bottom: 1rem;
   max-width: 600px;
   text-align: start;
+  margin: 0.5rem;
 }
 
 /* Clase genérica para los contenedores de botones */
 .about-section {
-  font-size: 1rem;
-  color: #000000;
-  margin-bottom: 1rem;
-  max-width: 600px;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en nuevas filas */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 15px; /* Espacio entre los elementos */
+  max-width: 100%; /* Asegura que el contenedor no exceda el ancho disponible */
+  max-height: 100%;
+  padding: 10px; /* Espaciado alrededor del contenido */
 }
 
+.about-section h2 {
+  width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+  margin-bottom: 20px; /* Espacio entre el título y los elementos */
+  text-align: center; /* Centra el texto del título */
+}
 
-/**MOBILE ETAPA 2*/
+.tech-item {
+  display: flex;
+  flex-direction: row; /* Alinea la imagen y el texto en una fila horizontal */
+  align-items: center; /* Centra verticalmente los elementos hijos */
+  width: 100px; /* Ancho fijo para cada tech-item */
+  margin: 0; /* Elimina márgenes para control preciso del espaciado */
+}
 
-/*   
-  @media (min-width: 412px) and (max-width: 539px) {
-    .about-tittle {
-      margin-top: -80px;
-    }
-  }
-  
-  @media (min-width: 540px) and (max-width: 767px) {
-    .about-tittle {
-      margin-top: -85px;
-    }
-  }
-  
-  @media (min-width: 768px) and (max-width: 819px) {
-    .about-tittle {
-      margin-top: -390px;
-    }
-  }
-  
-  @media (min-width: 820px) and (max-width: 1023px) {
-    .about-tittle {
-      margin-top: -700px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .about-tittle {
-      margin-top: -150px;
-    }
-  }
-   */
-
-
-/* .about-buttons{
-    font-size: 1rem;
-    color: #000000;
-    margin-bottom: 1rem;
-    max-width: 600px;
-    text-align: center;
+.social-icon {
+  width: 150px; /* Ancho de la imagen */
+  height: 150px; /* Altura de la imagen */
 
 }
 
-.section-languages{
-    font-size: 1rem;
-    color: #000000;
-    margin-bottom: 1rem;
-    max-width: 600px;
-    text-align: center;
+.tech-details {
+  display: flex;
+  flex-direction: column; /* Coloca el nombre y la versión en una columna vertical */
 }
 
-.section-frameworks{
-    font-size: 1rem;
-    color: #000000;
-    margin-bottom: 1rem;
-    max-width: 600px;
-    text-align: center;
+.tech-name {
+  font-size: 1rem; /* Tamaño de fuente del nombre */
+}
+
+.tech-version {
+  font-size: 0.8rem; /* Tamaño de fuente de la versión */
+  color: #666666; /* Color del texto de la versión */
+}
+
+
+
+
+/**Media query para dispositivos con tamano de 1024px en adelante*/
+@media (min-width: 1024px) {
+  .about-buttons{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+    max-width: 1000px;
+  }
+  .about-text{
+    max-width: 1000px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width: 1024px) and (max-width: 1200px) {
+  .about-buttons{
+    display: flex;
+    flex-direction: row;
+  }
+  
 } */

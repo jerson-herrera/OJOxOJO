@@ -44,7 +44,7 @@ export const Navbar = () => {
       <ul className={`items ${clicked ? "active" : ""}`}>
         <li>
           <a href="#home" onClick={handleClick}>
-            Home
+            Inicio
           </a>
         </li>
         <li>
@@ -59,7 +59,7 @@ export const Navbar = () => {
         </li>
         <li>
           <a href="#contact" onClick={handleClick}>
-            Contact
+            Contacto
           </a>
         </li>
       </ul>

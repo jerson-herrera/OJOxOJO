@@ -21,8 +21,8 @@ body {
   margin-top: 0; /* Elimina cualquier margen superior */
   margin-bottom: 0; /* Elimina el margen inferior */
 }
-.sections {
-  max-width: 300px; /* Ajusta el tamaño de la tarjeta */
+.project-section {
+  max-width: 360px; /* Ajusta el tamaño de la tarjeta */
   background-color: #fff; /* Fondo blanco para la tarjeta */
   border-radius: 8px; /* Esquinas redondeadas */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
@@ -35,7 +35,7 @@ body {
 h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #666; /* Color del subtítulo */
+  color: #000000; /* Color del subtítulo */
 }
 
 .img-cdl-project {
@@ -45,41 +45,41 @@ h3 {
   margin-bottom: 15px;
 }
 
-.description {
+.project-description {
   font-size: 16px;
   color: #555;
   margin-bottom: 20px;
 }
-.contenedor-items {
+.project-contenedor-items {
   display: flex;
   flex-wrap: wrap;
 }
-.tech-item {
+.project-tech-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 10px;
+  justify-content: center; 
+  flex-basis: 30%;
 }
 
-.social-icon {
-  width: 100px; /* Tamaño del ícono */
-  height: 40px;
-  margin-right: 10px; /* Espacio entre ícono y texto */
+.project-social-icon {
+  width: 80px; /* Tamaño del ícono */
+  height: 30px;
+  margin-right: 5px; /* Espacio entre ícono y texto */
 }
 
-.tech-name {
+.project-tech-name {
   font-size: 16px;
   font-weight: bold;
   color: #333;
   margin-right: 5px;
 }
 
-.tech-version {
+.project-tech-version {
   font-size: 14px;
   color: #888;
 }
 
-.links-button {
+.project-links-button {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -87,7 +87,7 @@ h3 {
   flex-direction: row;
 }
 
-.link-button {
+.project-link-button {
   display: flex;
   align-items: center;
   background-color: #de1f1f;
@@ -103,12 +103,40 @@ h3 {
   border: none; /* Elimina bordes */
 }
 
-.link-button:hover {
+.project-link-button:hover {
   background-color: #555;
 }
 
-.link-icon {
+.project-link-icon {
   width: 24px;
   height: 24px;
   margin-right: 0.5rem;
+}
+
+
+@media (max-width: 406px) {
+  .project-tech-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-basis: 30%;
+  }
+  
+  .project-social-icon {
+    width: 60px; /* Tamaño del ícono */
+    height: 25px;
+    margin-right: 5px; /* Espacio entre ícono y texto */
+  }
+  
+  .project-tech-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+  }
+  
+  .project-tech-version {
+    font-size: 12px;
+    color: #888;
+  }
 }
