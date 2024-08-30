@@ -1,0 +1,121 @@
+/* AboutPage.css */
+
+/* Mobile First */
+
+/* Estilos generales para la página */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ocupa al menos el tamaño completo de la ventana */
+    padding: 10px; /* Espaciado alrededor del contenido */
+    box-sizing: border-box;
+    padding-top: 75px; /* Espaciado para la navbar */
+    background-color: #f0f0f0; /* Fondo neutro para móvil */
+  }
+  
+  .about-tittle {
+    font-size: 1.8rem; /* Tamaño más pequeño para pantallas pequeñas */
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text {
+    font-size: 1rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    color: #666;
+    text-align: center;
+    margin-bottom: 1rem;
+    max-width: 100%; /* Máximo ancho para evitar desbordamiento */
+  }
+  
+  /* Estilo de los botones y secciones */
+  .about-buttons {
+    width: 100%; /* Ocupa el ancho completo */
+    text-align: center;
+  }
+  
+  /* Secciones de lenguajes y frameworks */
+  .about-section {
+    margin-bottom: 2rem; /* Espaciado entre secciones */
+  }
+  
+  .section-languages, .section-frameworks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 20px; /* Espacio entre cada icono */
+  }
+  
+  .tech-item {
+    width: calc(50px + 20px); /* Ancho de la imagen + espaciado para el texto */
+    height: calc(50px + 40px); /* Altura de la imagen + espaciado para el texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Asegura que la imagen y el texto estén distribuidos verticalmente */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+  }
+  
+  .tech-item img {
+    width: 50px; /* Tamaño ajustado */
+    height: 50px; /* Tamaño ajustado */
+    object-fit: contain;
+  }
+  
+  .tech-name,
+  .tech-version {
+    font-size: 0.8rem;
+    color: #333;
+    margin-top: 2px;
+  }
+  
+  .tech-item:hover {
+    transform: scale(1.05); /* Efecto de zoom en hover */
+  }
+  
+  /* Estilos para pantallas más grandes (tabletas y PCs) */
+  @media (min-width: 768px) {
+    .about-container {
+      padding: 20px; /* Más espaciado para pantallas más grandes */
+      background-color: #e0e0e0; /* Fondo más suave para pantallas grandes */
+    }
+  
+    .about-tittle {
+      font-size: 2.5rem; /* Tamaño de fuente más grande para pantallas grandes */
+    }
+  
+    .about-text {
+      font-size: 1.2rem; /* Tamaño de fuente más grande para pantallas grandes */
+      max-width: 800px; /* Máximo ancho para pantallas grandes */
+    }
+  
+    .tech-item {
+      width: calc(60px + 20px); /* Ancho ajustado para pantallas grandes */
+      height: calc(60px + 40px); /* Altura ajustada para pantallas grandes */
+    }
+  
+    .tech-name, .tech-version {
+      font-size: 1rem; /* Tamaño de fuente más grande para pantallas grandes */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .about-container {
+      padding: 30px; /* Más espaciado para pantallas aún más grandes */
+    }
+  
+    .about-tittle {
+      font-size: 3rem; /* Tamaño de fuente aún más grande para pantallas muy grandes */
+    }
+  
+    .about-text {
+      font-size: 1.4rem; /* Tamaño de fuente aún más grande para pantallas muy grandes */
+      max-width: 900px; /* Máximo ancho ajustado para pantallas muy grandes */
+    }
+  }
+  

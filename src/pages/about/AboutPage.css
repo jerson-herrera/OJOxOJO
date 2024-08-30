@@ -1,0 +1,98 @@
+/*!Cambiar el colo de los texto por que aqui son diferentes a los de homepage*/
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /*?Deja el contenido arriba siempre muy GOD*/
+  align-items: center;
+  min-height: 100vh; /* Ocupa al menos el tamaño completo de la ventana */
+  padding: 10px; /* Espaciado alrededor del contenido */
+  box-sizing: border-box;
+  padding-top: 75px; /*Baja el contenido para que no quede por debajo de la navbar*/
+  background-color: blueviolet;
+}
+
+.about-tittle {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 0rem;
+  align-items:start;
+  justify-content: start;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  text-align: start;
+}
+
+/* Clase genérica para los contenedores de botones */
+.about-section {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  text-align: center;
+}
+
+
+/**MOBILE ETAPA 2*/
+
+/*   
+  @media (min-width: 412px) and (max-width: 539px) {
+    .about-tittle {
+      margin-top: -80px;
+    }
+  }
+  
+  @media (min-width: 540px) and (max-width: 767px) {
+    .about-tittle {
+      margin-top: -85px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 819px) {
+    .about-tittle {
+      margin-top: -390px;
+    }
+  }
+  
+  @media (min-width: 820px) and (max-width: 1023px) {
+    .about-tittle {
+      margin-top: -700px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .about-tittle {
+      margin-top: -150px;
+    }
+  }
+   */
+
+
+/* .about-buttons{
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    text-align: center;
+
+}
+
+.section-languages{
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    text-align: center;
+}
+
+.section-frameworks{
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    max-width: 600px;
+    text-align: center;
+} */

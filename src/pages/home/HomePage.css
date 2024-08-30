@@ -1,0 +1,123 @@
+/* HomePage.css */
+/**MOBILE FIRST*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+/*!ACOMODAR EL CSS PARA LOS 1024 DE ANCHO Y ALTURA, Y LOS 768 DE ACHO Y ALTURA */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh; /* Ocupa al menos el tamaño completo de la ventana */
+  padding: 10px; /* Espaciado alrededor del contenido */
+  box-sizing: border-box;
+  padding-top: 70px; /*Baja el contenido para que no quede por debajo de la navbar*/
+}
+.profile-picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border: 3px solid #007bff;
+}
+.home-name {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.home-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  text-align: center;
+}
+
+a button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a button:hover {
+  background-color: #0056b3;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-direction: row;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  background-color: #de1f1f;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #555;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+/* 
+@media (min-width: 320px) and (max-width: 380px) {
+}
+
+
+@media (min-width: 381px) and (max-width: 430px) {
+  .profile-picture {
+    margin-top: -180px;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 539px) {
+  .profile-picture {
+    margin-top: -380px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+  .profile-picture {
+    margin-top: -85px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 819px) {
+  .profile-picture {
+    margin-top: -390px;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1024px) {
+  .profile-picture {
+    margin-top: -580px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profile-picture {
+    margin-top: -130px;
+  }
+} */
